@@ -1,0 +1,96 @@
+@import 'utilities';
+@import 'buttons';
+@import 'login';
+
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7rem;
+    
+    a, p, label {
+        font-size: 1.2rem;
+        font-weight: lighter;
+        line-height: 1.7rem;
+        text-decoration: none;
+    }
+    h1 {
+        font-size: 1.8rem;
+        line-height: 4rem;
+        color: $textColorOne;
+    }
+    header, .hero > * {
+        color: $textColorOne;
+    }
+    .container, .flex {
+        display: flex;
+    }
+    %flex {
+        justify-content: center;
+        align-items: center;
+    }
+    .flex {
+        @extend %flex;
+    }
+    
+    header {
+        background: $primaryColor;
+
+        .container {
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #menuHamburger {
+            display: none;
+        }
+    }
+    .hero {
+        background: $primaryColor__Gradient;
+
+        .container {
+            flex-direction: column;
+            @extend %flex;
+
+            h1 {
+                color: $textColorOne;
+                font-size: 3rem;
+                max-width: 50%;
+                line-height: 3rem;
+            }
+            a, p, h1 {
+                text-align: center;
+            }
+            & > * {
+                margin: .8rem 0;
+            }
+            .hero__text {
+                max-width: 60%;
+            }
+        }
+        .hero__img {
+            margin-bottom: -8rem;
+
+            .img__lg {
+                width: 30%;
+            }
+            
+            img {
+                width: 25%;
+                margin: 0;
+            }
+        }
+    }
+
+    // section 2
+    .section2 {
+        .container {
+            margin-top: 8rem;
+        }
+    }
+}
+
+
+@import 'mediaqueries';

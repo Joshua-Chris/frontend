@@ -1,0 +1,35 @@
+$primaryColor: rgb(45, 77, 173);
+$primaryColor__Gradient: linear-gradient(rgb(45, 77, 173), rgb(201, 38, 216));
+$textColorOne: #fff;
+$textColorTwo: #444;
+$header: #222;
+$headerTwo: #000F38;
+$btnColor: #fff;
+$btnPrimary: #000F38;
+$btnSecondary: transparent;
+$padding: .8rem 1rem;
+$btn-padding: .5rem 1.4rem;
+
+// reusable margins and paddings
+$space-amounts: (1,2,3,4,5);
+
+@each $space in $space-amounts {
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+    .mx-#{$space} {
+        margin: 0 #{$space}rem;
+    }
+    .p-#{$space} {
+        padding: #{$space}rem;
+    }
+    .py-#{$space} {
+        padding: #{$space}rem 0;
+    }
+    .px-#{$space} {
+        padding: 0 #{$space}rem;
+    }
+}

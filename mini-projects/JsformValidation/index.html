@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Landing Page</title>
+    <link rel="icon" href="images/git.png">
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="container">
+                <nav>
+                    <a href="#" class="menu">Home</a>
+                    <a href="#" class="menu">Categories</a>
+                    <a href="#" class="menu">Build</a>
+                    <a href="#" class="menu">Contact</a>
+                </nav>
+                <h1>Creatives</h1>
+                <nav>
+                    <a href="#" class="menu" onclick="displayLoginForm()">Login</a>
+                    <a href="#" class="btn-primary">Signup</a>
+                </nav>
+                <img src="images/menu.png" id="menuHamburger">
+            </div>
+        </header>
+        <section class="login__section" id="loginId">
+            <div class="container p-3">
+                <div class="login__wrapper p-4">
+                    <div class="login__top__info">
+                        <h1>Login to your dashboard</h1>
+                        <p id="errMsg"></p>
+                    </div>
+                    <div class="login__fields">
+                        <div class="login__input__fields">
+                            <label for="email">Email Address:</label>
+                            <input type="text" name="email" id="email">
+                        </div>
+                        <div class="login__input__fields">
+                            <label for="pwd">Password:</label>
+                            <input type="password" name="pwd" id="pwd">
+                        </div>
+                        <button class="btn-primary" type="submit" onclick="formValidator()">Login</button>
+                    </div>
+                    <div class="login__bottom__info">
+                        <p>Not a user? <a href="#">Signup</a></p>
+                        <p>Forgot password</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

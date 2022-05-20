@@ -1,0 +1,33 @@
+@import 'utilities';
+@import 'buttons';
+
+.login__section {
+    .login__wrapper {
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+        border-radius: 3rem;
+    }
+    h1 {
+        color: #222;
+    }
+    .login__input__fields {
+        display: flex;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .7rem .8rem;
+        border-radius: 5px;
+
+        input {
+            background: none;
+            border: none;
+            outline: none;
+            padding: .8rem 1rem;
+            color: #000;
+            font-size: 1.1rem;
+            width: 100%;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+            border-radius: .5rem;
+        }
+    }
+}

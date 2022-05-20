@@ -1,0 +1,48 @@
+@import 'utilities';
+
+// tablet viewport - General
+@media only screen and (max-width: 768px) {
+    main {
+        // header section
+        header {
+            justify-content: space-around;
+    
+            nav {
+                display: none;
+            }
+    
+            #menuHamburger {
+                display: block;
+                width: 2.7rem;
+            }
+        }
+        // hero section 
+        .hero {
+            .container {
+    
+                h1 {
+                    max-width: 70%;
+                }
+                .hero__text {
+                    max-width: 70%;
+                    font-size: 1.1rem;
+                }
+            }
+            .hero__img {
+    
+                img {
+                    width: 30%;
+                }
+            }
+        }        
+    }
+}
+
+// Mobile viewport - General
+@media only screen and (max-width: 550px) {
+    .section2 {
+        .container {
+            flex-direction: column;
+        }
+    }
+}

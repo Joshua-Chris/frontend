@@ -1,0 +1,63 @@
+body {
+    background: royalblue;
+  }
+  
+  body .container, body .user-data {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  body .container .btn-default, body .container .btn-default-2, body .container button, body .container input, body .user-data .btn-default, body .user-data .btn-default-2, body .user-data button, body .user-data input {
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+  }
+  
+  body .container .btn-default, body .container .btn-default-2, body .user-data .btn-default, body .user-data .btn-default-2 {
+    font-size: 12px;
+    padding: .7rem 1rem;
+    cursor: pointer;
+  }
+  
+  body .container .btn-default, body .user-data .btn-default {
+    background: #1a3ca2;
+  }
+  
+  body .container .btn-default-2, body .user-data .btn-default-2 {
+    background: #577ae4;
+    font-size: 15px;
+    margin: .1rem;
+  }
+  
+  body .container button, body .user-data button {
+    background: #02185a;
+    cursor: pointer;
+  }
+  
+  body .container label, body .user-data label {
+    font-size: 20px;
+  }
+  
+  body .container input, body .user-data input {
+    padding: .7rem 1rem;
+    width: 15rem;
+    background-color: #afc0f2;
+    color: #02185a;
+  }
+  
+  body .container input #pwd-show, body .user-data input #pwd-show {
+    position: absolute;
+    right: 10px;
+  }
+  
+  body .container .generateRandomPwd, body .user-data .generateRandomPwd {
+    padding: .5rem 0;
+  }
+  

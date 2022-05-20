@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h1>Js Counter App</h1>
+            <h2 id="counter">0</h2>
+            <button id="incrementor" onclick="increment()">Run App (++)</button>
+            <button id="decrementor" onclick="decrement()">Run App (--)</button>
+            <button onclick="reset()" style="background: crimson">Reset App</button>
+            <h2 id="score-points">Previous number: </h2>
+        </div>
+    </section>
+    
+    <section style="display: none;">
+        <div class="container">
+            <h2 style="color: greenyellow; text-shadow: 2px 2px black;" id="success-message"></h2>
+            <h2 style="color: orangered; text-shadow: 2px 2px black;" id="error-message"></h2>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username">
+            <label for="pwd">Password:</label>
+            <input type="password" name="pwd" id="pwd">
+            <button type="submit" onclick="authenticator()">Submit</button>
+        </div>
+    </section>
+    
+    
+    
+    <script src="counterApp.js"></script>
+</body>
+</html>
